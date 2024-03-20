@@ -43,7 +43,7 @@ function navbarAnimation(){
             start:"top 0",
             end:"top -5%",
             scrub:true,
-        }
+        },
     })
     gsap.to("#nav-part-2 #links",{
         transform:"translateY(-100%)",
@@ -55,7 +55,7 @@ function navbarAnimation(){
             end:"top -5%",
             scrub:true,
         }
-    })
+    });
     
 }
 navbarAnimation()
@@ -70,45 +70,48 @@ videocon.addEventListener("mouseenter", function(){
 
 
        })
-    })
+    });
     videocon.addEventListener("mouseleave", function(){
         gsap.to(playbtn,{
          scale:0,
          opacity:0
 
         })
-        })
+        });
         videocon.addEventListener("mousemove",function(dets){
             gsap.to(playbtn,{
                 left:dets.x-70,
                 top:dets.y-60
             })
-        })
+        });
 }
 
-videoconAnimation()
+videoconAnimation();
  function loadingAnimation(){
     
- gsap.from("#page1 h1",{
-      y:100,
+ gsap.from("#page1 h1,h2",{
+      y:100,    
       opacity:0,
-      delay:0.5,
+      delay:0.6,
       duration:0.9,
-      stagger:0.3
+      stagger:0.3,
  
 
- })
+ });
+ 
+
+
  gsap.from("#page1 #video-container",{
     scale:0.9,
     opacity:0,
     delay:1.3,
     duration:0.3,
     
- })
+ });
 }
 
 
-loadingAnimation()
+loadingAnimation();
 
 
 function cursorAnimation(){
@@ -132,5 +135,85 @@ function cursorAnimation(){
     });  
 
 }
-cursorAnimation()
+cursorAnimation();
 
+
+
+function toggle(index) {
+    const hiddenContainer = document.getElementById("hiddenContainer");
+    const passages = hiddenContainer.querySelectorAll(".hidden-passage");
+    const icons = document.querySelectorAll(".icon");
+  
+    // Ensure only one passage is visible at a time
+    passages.forEach(passage => {
+      passage.style.opacity = 0;
+      passage.style.transform = "scale(0)";
+    });
+  
+    const passageToShow = document.getElementById(`passage${index}`);
+  
+    // Reveal the selected passage with smooth animation
+    passageToShow.style.opacity = 1;
+    passageToShow.style.transform = "scale(1)";
+  
+    // Optional: Add a visual cue to the active icon
+    icons.forEach(icon => {
+      icon.classList.remove("active");
+    });
+    const activeIcon = document.querySelector(`.icon[data-index="${index}"]`);
+    activeIcon.classList.add("active");
+    
+    
+  }
+ 
+ /* document.addEventListener("DOMContentLoaded", function () {
+    // Debugging statement to confirm script execution
+    console.log("Script loaded.");
+
+  function toggle(index) {
+    // Get the hidden passage corresponding to the clicked icon
+    let hiddenPassage = document.getElementById('passage' + index);
+
+    // Create a SplitText instance for the hidden passage
+    let splitText = new SplitType(hiddenPassage, { types: 'lines,words,chars', linesClass: 'line' });
+
+    // Toggle visibility of the hidden passage
+    hiddenPassage.classList.toggle('active');
+
+    // Add GSAP animation
+    gsap.from(splitText.chars, { opacity: 0, y: 10, duration: 0.5, stagger: 0.02, ease: 'power2.out' });
+    gsap.from(splitText.words, { opacity: 0, y: -80, duration: 0.5, stagger: 0.03, ease: 'power2.out' });
+    gsap.from(splitText.lines, { opacity: 0, y: -100, duration: 0.5, stagger: 0.04, ease: 'power2.out' });
+  }
+ });*/
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Debugging statement to confirm script execution
+    console.log("Script loaded.");
+
+    // Your existing JavaScript code
+
+    // Add event listeners to each icon
+    for (let i = 1; i <= 8; i++) {
+      var icon = document.querySelector('.icon[data-index="' + i + '"]');
+      
+      // Debugging statement to confirm icon selection
+      console.log("Icon " + i + " selected:", icon);
+
+      if (icon) {
+        icon.addEventListener('click', function () {
+          toggle(i);
+        });
+      } else {
+        // Debugging statement for missing icon
+        console.log("Icon " + i + " not found.");
+      }
+    }
+  });
+   
+  
+      
+    
+
+
+   

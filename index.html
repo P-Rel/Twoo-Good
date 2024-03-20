@@ -9,6 +9,7 @@
         type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -90,59 +91,265 @@
     <div id="cursor"></div>
     <div id="main">
         <div id="page1">
-            <h1>Change</h1>
+            <h2>Change</h2>
             <h1> the course</h1>
             <div id="video-container">
                 <div id="play">PLAY</div>
                 <video autoplay loop muted src="./video.mp4"></video>
             </div>
         </div>
+        <div id="header">
+            <span>buy good</span>
+            <span>do good</span>
+        </div>
         <div id="page2">
             <div id="elem1" class="elem">
                 <img data-scroll data-scroll-speed="1"
                     src="https://cdn.sanity.io/images/w8f1ak3c/production/a54b969c847029357a401e2d8ea5d52abd5451d0-2250x1500.jpg/DSC0051_Dexter%20Kim%20copy.jpg?rect=675,0,900,1500&w=420&h=700&fit=min&auto=format"
-                     alt="">
-                <div data-scroll data-scroll-speed="-2" class="dets"></div>
+                    alt="">
+                <div data-scroll data-scroll-speed="-2" class="dets">
+                    <div id="dots">
+
+                    </div>
+                    <div>
+                        <h3>Shop</h3>
+                    </div>
+                    <div>
+                        <h4>Messina</h4>
+                    </div>
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
             </div>
             <div id="elem2" class="elem">
                 <img data-scroll data-scroll-speed="-1"
                     src="https://cdn.sanity.io/images/w8f1ak3c/production/bc3f529e3f10086db91822f615caf549a260362d-1500x2250.jpg/DSC0083_Dexter%20Kim.jpg?rect=75,0,1350,2250&w=420&h=700&fit=min&auto=format"
                     alt="">
-                <div data-scroll data-scroll-speed="-2" class="dets"></div>
+                <div data-scroll data-scroll-speed="-2" class="dets">
+                    <div id="dots">
+
+                    </div>
+                    <div>
+                        <h3>Shop</h3>
+                    </div>
+                    <div>
+                        <h4>Gifts for food</h4>
+                    </div>
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
             </div>
             <div id="elem3" class="elem">
                 <img data-scroll data-scroll-speed="1"
                     src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
                     alt="">
-                <div data-scroll data-scroll-speed="-2" class="dets"></div>
+                <div data-scroll data-scroll-speed="-2" class="dets">
+                    <div id="dots">
+
+                    </div>
+                    <div>
+                        <h3>Shop</h3>
+                    </div>
+                    <div>
+                        <h4>Bath</h4>
+                    </div>
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
             </div>
         </div>
         <div id="page3">
+            <div id="summary">
+                <h2 class="quotes">
+                    <p>We believe in people, until they believe in themselves again.</p>
+                </h2>
+                <div id="passage">
+                    <p>Everything we do is designed to rebuild self worth and independence, in order to break free from
+                        the cycle of disadvantage.</p>
+                    <br>
+                    <p>With every purchase you make with us, you're helping to change the course of someone's life;
+                        you're walking alongside vulnerable women as they find their way home again.</p>
+
+                </div>
+            </div>
             <div class="child" id="child1">
                 <img src="https://cdn.sanity.io/images/w8f1ak3c/production/adb77436d60e62d2b5b0574016abcc864b8e65b0-4498x2999.png/DSC0078_Dexter%20Kim.png?rect=470,108,3458,2760&fp-x=0.4888698630136987&fp-y=0.49614340367765025&w=1024&h=817&fit=crop&crop=focalpoint&auto=format"
                     alt="">
+                <h3>Change the course kit </h3>
+                <span>$95</span>
+
+
+
             </div>
             <div class="child" id="child2">
                 <img src="https://cdn.sanity.io/images/w8f1ak3c/production/4206e9c3f7ab098369c39a2194b82eeca6bb0664-6166x4111.png/DSC0005_Dexter%20Kim.png?rect=2,0,6163,4111&w=1024&h=683&auto=format"
                     alt="">
-                    
+                <h3>The cook book duo kit </h3>
+                <span>$72</span>
+
             </div>
-        
+
             <div class="child" id="child3">
                 <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d38a94692dcb9250bb49632883f8e31c4a11e123-1408x1408.png/Two%20Hugs%20Candle%20Two%20Good%20Co.png?w=1024&h=1024&auto=format"
                     alt="">
+                <h3>Two hugs candle </h3>
+                <span>$69</span>
             </div>
-        
+
             <div class="child" id="child4">
                 <img src="https://cdn.sanity.io/images/w8f1ak3c/production/5ff174456e7f3a000b5bcdd6768155d29570c39b-5000x5000.png/Good-Nights-Sleep-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
                     alt="">
+                <h3>The good night's sleep care pack </h3>
+                <span>$125</span>
             </div>
         </div>
+        <div id="header2">
+            <span>word of goodness</span>
+            <span>messages of love & support</span>
+        </div>
+        <div id="page4">
+            <div class="icon-container" id="iconContainer">
+                <div class="icon" data-index="1">
+                    <i class="ri-circle-line" onclick="toggle(1)"></i>
+                    <span>m// 00<!-- -->1<!-- --><br>Cartier<!-- -->.<!-- --></span>
+                </div>
+                <div class="icon" data-index="2">
+                    <i class="ri-circle-line" onclick="toggle(2)"></i>
+                    <span>m// 00<!-- -->2<!-- --><br>Felicity T<!-- -->.<!-- --></span>
+                </div>
+                <div class="icon" data-index="3">
+                    <i class="ri-circle-line" onclick="toggle(3)"></i>
+                    <span>m// 00<!-- -->3<!-- --><br>Barbara<!-- -->.<!-- --></span>
+                </div>
+                <div class="icon" data-index="4">
+                    <i class="ri-circle-line" onclick="toggle(4)"></i>
+                    <span>m// 00<!-- -->4<!-- --><br>Salesforce<!-- -->.<!-- --></span>
+                </div>
+                <div class="icon" data-index="5">
+                    <i class="ri-circle-line" onclick="toggle(5)"></i>
+                    <span>m// 00<!-- -->5<!-- --><br>Richard<!-- -->.<!-- --></span>
+                </div>
+            
+
+            </div>
+
+            <div class="hidden-container" id="hiddenContainer">
+                <div class="hidden-passage" data-index="1" onclick="toggle(1)" id="passage1">
+                    <p>THANK YOU SO MUCH FOR
+                        THE BEAUTIFUL CATERING; IT
+                        MEANS A LOT WORKING
+                        WITH A COMPANY SUCH AS
+                        TWO GOOD CO.</p>
+                </div>
+                <div class="hidden-passage" splitText" data-index="2" onclick="toggle(2)" id="passage2">
+                    <p>THE HAMPERS WE ORDERED
+                        WERE LOVELY AND THE
+                        TEAM ARE WONDERFUL TO
+                        LIAISE WITH.</p>
+                </div>
+                <div class="hidden-passage" data-index="3" onclick="toggle(3)" id="passage3">
+                    <p>MY PACKAGE JUST ARRIVED
+                        AND THE PRESENTATION IS
+                        SO BEAUTIFUL; ELEGANT,
+                        MAGICAL AND
+                        MEANINGFUL, WITH THE
+                        ITEMS WRAPPED IN
+                        DELICIOUS-SMELLING TISSUE
+                        PAPER. GORGEOUS; WILL BE
+                        BACK FOR MORE.</p>
+                </div>
+                <div class="hidden-passage" data-index="4" onclick="toggle(4)" id="passage4">
+                    <p>I THINK I SPEAK FOR
+                        EVERYONE WHEN I SAY WE
+                        ARE VERY GRATEFUL TO
+                        HAVE BEEN ABLE TO COME
+                        IN AND HELP OUT FOR THE
+                        DAY; THE WORK YOU DO IS
+                        AMAZING.</p>
+                </div>
+                <div class="hidden-passage" data-index="5" onclick="toggle(5)" id="passage5">
+                    <p>EVERYONE AT TWO GOOD
+                        ARE LOVELY TO WORK WITH.
+                        CATERING WAS EXCELLENT
+                        AND WELL PRICED, ALL FOR
+                        A GOOD CAUSE... WHAT'S
+                        NOT TO LOVE?</p>
+                </div>
+             
+            </div>
+
+            <div id="subscribe">
+                <button>
+                    <h6>send your own message</h6>
+                </button>
+            </div>
+
+            <div id="message">
+                <h6>Sometimes it’s the smallest actions <br> that can make the biggest impact.</h6>
+            </div>
+        </div>
+        <div id="page5">
+            <div id="content1" class="content">
+                <h4>OUR IMPACT.</h4>
+                <br><br>
+                <p>
+                The thing is, we don't save <br>
+                <br>
+                What we do is provide a safe space for women to change the course of their own lives.<br><br>
+                After many years of living in crisis, abuse and complex trauma, restoring self-worth is foundational for
+                independence. We believe that through experiences that promote love and respect, we can spark and
+                nurture a sense of self-worth for those on the path of healing.<br><br>
+                <a href="">HERE'S HOW WE DO IT</a></p>
+            </div>
+            <div id="content2" class="content">
+                <img data-scroll data-scroll-speed="-1" src="https://cdn.sanity.io/images/w8f1ak3c/production/943f8f43b76b4e030f41deddca1edd44170fee39-5504x8256.jpg/Christina-Maria-Jes-Lindsay-9143.jpg?fp-x=0.5&fp-y=0.5&w=420&h=621&fit=crop&crop=focalpoint&auto=format"
+                    alt="">
+                    
+            </div>
+            <div id="content3" class="content">
+                <img data-scroll data-scroll-speed="-1" src="https://cdn.sanity.io/images/w8f1ak3c/production/84da7b8b510e006ce0ca22769d93bb6c044945f6-5504x8256.jpg/Patricia-Work-Work-Good-Stories-Two-Good-Co.jpg?rect=0,59,5504,8138&w=420&h=621&fit=min&auto=format"
+                    alt="">
+            </div>
+         
+        </div>
+        <div id="header3">
+            <span>Enter Your Email address for good</span>
+            <i class="ri-arrow-right-line"></i>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>CONNECT WITH US</h3>
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Twitter</a>
+                    <a href="">Linkedin</a>
+                    <a href="">Youtube</a>
+                </div>
+                <div class="footer-image">
+                   <img src="https://sydneylawgroup.com.au/wp-content/uploads/2021/03/twogoodlogo-dark-300x300.png">
+                </div>
+                <div class="footer-right">
+                    <h3>THE NITTY GRITTIES</h3>
+                    <a href="">Good Things FAQs</a>
+                    <a href="">Good Food FAQs</a>
+                    <a href="">Good Places</a>
+                    <a href="">Pathways</a>
+                    <a href="">Carrers</a>
+                    <a href="">Wholesale</a>
+                </div>
+        </footer>
+        <div id="description">
+            <a href="">© TWO GOOD CO. 2024</a>
+            <a href="">TERMS OF USE</a>
+            <a href="">PRIVACY POLICY</a>
+            <p>We are proud and privileged to have our home on this land, and to be able to continue the long tradition of community coming together<br> around food, begun thousands of years ago by First Nations peoples. As we stand together on this unceded land, we acknowledge our <br> First Nations people, are the original custodians of this land, and we recognise their deep connection to land, water, sky and community <br> which continues today. We pay our deep respects to community elders, past, present and emerging, for they hold the memories, the <br> traditions, the culture and hopes of Aboriginal and Torres Strait Islander peoples. Always was, always will be Aboriginal land.</p>
+           </div>
+        
 
     </div>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
@@ -150,6 +357,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
         integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="script.js"></script>
 </body>
 
